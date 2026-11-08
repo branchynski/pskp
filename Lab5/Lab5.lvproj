@@ -14,6 +14,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Host_NetworkStreams.vi" Type="VI" URL="../vi/Host_NetworkStreams.vi"/>
 		<Item Name="Host_ShVariables.vi" Type="VI" URL="../vi/Host_ShVariables.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
@@ -1711,6 +1712,7 @@ AddOutputFilter chunkFilter
 				</Item>
 			</Item>
 		</Item>
+		<Item Name="RT_NetworkStreams.vi" Type="VI" URL="../vi/RT_NetworkStreams.vi"/>
 		<Item Name="RT_ShVariables.vi" Type="VI" URL="../vi/RT_ShVariables.vi"/>
 		<Item Name="SV.lvlib" Type="Library" URL="../vi/SV.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
