@@ -3,6 +3,7 @@
 	<Property Name="NI.LV.All.SaveVersion" Type="Str">25.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="varPersistentID:{25ABDE13-180E-4F4D-887E-85F4914F52C2}" Type="Ref">/myRIO/SV.lvlib/Stop</Property>
+	<Property Name="varPersistentID:{CD8083BB-0815-457A-B1C4-CA81C83E335C}" Type="Ref">/myRIO/SP.lvlib/Stop_SP</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -15,8 +16,11 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="AccSimulator.vi" Type="VI" URL="../vi_sim/AccSimulator.vi"/>
 		<Item Name="Host_main.vi" Type="VI" URL="../vi/Host_main.vi"/>
+		<Item Name="Host_main_Lab7.vi" Type="VI" URL="../vi/Host_main_Lab7.vi"/>
 		<Item Name="main_test_lab2_3.vi" Type="VI" URL="../vi_sim/main_test_lab2_3.vi"/>
+		<Item Name="RT_Cmd.ctl" Type="VI" URL="../vi/RT_Cmd.ctl"/>
 		<Item Name="test_lab_3_3.vi" Type="VI" URL="../../vi_sim/test_lab_3_3.vi"/>
+		<Item Name="UI_Msg.ctl" Type="VI" URL="../vi/UI_Msg.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -1844,6 +1848,9 @@ AddOutputFilter chunkFilter
 		<Item Name="Init_FPGA.vi" Type="VI" URL="../vi/Init_FPGA.vi"/>
 		<Item Name="Init_SV.vi" Type="VI" URL="../vi/Init_SV.vi"/>
 		<Item Name="lab3_1_rt.vi" Type="VI" URL="../vi/lab3_1_rt.vi"/>
+		<Item Name="RT_Cmd.ctl" Type="VI" URL="../vi/RT_Cmd.ctl"/>
+		<Item Name="RT_lab7.vi" Type="VI" URL="../vi/RT_lab7.vi"/>
+		<Item Name="SP.lvlib" Type="Library" URL="../vi/SP.lvlib"/>
 		<Item Name="SV.lvlib" Type="Library" URL="../vi/SV.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
