@@ -14,6 +14,10 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="TDMS" Type="Folder">
+			<Item Name="TDMS_ReadLast.vi" Type="VI" URL="../host_subvi/TDMS_ReadLast.vi"/>
+			<Item Name="WebDAV_GetNew.vi" Type="VI" URL="../host_subvi/WebDAV_GetNew.vi"/>
+		</Item>
 		<Item Name="AccSimulator.vi" Type="VI" URL="../vi_sim/AccSimulator.vi"/>
 		<Item Name="action.ctl" Type="VI" URL="../vi/action.ctl"/>
 		<Item Name="Cmd_Check.vi" Type="VI" URL="../host_subvi/Cmd_Check.vi"/>
@@ -26,6 +30,7 @@
 		<Item Name="Host_main.vi" Type="VI" URL="../vi/Host_main.vi"/>
 		<Item Name="Host_main_Lab7.vi" Type="VI" URL="../vi/Host_main_Lab7.vi"/>
 		<Item Name="Host_main_Lab8.vi" Type="VI" URL="../vi/Host_main_Lab8.vi"/>
+		<Item Name="Host_main_Lab9.vi" Type="VI" URL="../vi/Host_main_Lab9.vi"/>
 		<Item Name="Host_Shutdown.vi" Type="VI" URL="../host_subvi/Host_Shutdown.vi"/>
 		<Item Name="main_test_lab2_3.vi" Type="VI" URL="../vi_sim/main_test_lab2_3.vi"/>
 		<Item Name="RT_Cmd.ctl" Type="VI" URL="../vi/RT_Cmd.ctl"/>
@@ -113,6 +118,23 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
+		<Item Name="Monitor" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Item Name="CPU_Load.vi" Type="VI" URL="../vi/CPU_Load.vi"/>
+			<Item Name="Disk_Usage.vi" Type="VI" URL="../vi/Disk_Usage.vi"/>
+			<Item Name="Disk_Check.vi" Type="VI" URL="../vi/Disk_Check.vi"/>
+			<Item Name="Delete_Oldest.vi" Type="VI" URL="../vi/Delete_Oldest.vi"/>
+		</Item>
+		<Item Name="TDMS" Type="Folder">
+			<Item Name="Logger_Init.vi" Type="VI" URL="../vi/Logger_Init.vi"/>
+			<Item Name="Logger_State.ctl" Type="VI" URL="../vi/Logger_State.ctl"/>
+			<Item Name="Remove_File.vi" Type="VI" URL="../vi/Remove_File.vi"/>
+			<Item Name="TDMS_EnsureFile.vi" Type="VI" URL="../vi/TDMS_EnsureFile.vi"/>
+			<Item Name="TDMS_Finalize.vi" Type="VI" URL="../vi/TDMS_Finalize.vi"/>
+			<Item Name="TDMS_NewFile.vi" Type="VI" URL="../vi/TDMS_NewFile.vi"/>
+			<Item Name="TDMS_RotateIfFull.vi" Type="VI" URL="../vi/TDMS_RotateIfFull.vi"/>
+			<Item Name="TDMS_WriteBlock.vi" Type="VI" URL="../vi/TDMS_WriteBlock.vi"/>
+		</Item>
 		<Item Name="Acq_Read.vi" Type="VI" URL="../vi/Acq_Read.vi"/>
 		<Item Name="Chassis" Type="myRIO Chassis">
 			<Property Name="crio.ProgrammingMode" Type="Str">fpga</Property>
@@ -1859,7 +1881,9 @@ AddOutputFilter chunkFilter
 		<Item Name="Cmd_Connect.vi" Type="VI" URL="../vi/Cmd_Connect.vi"/>
 		<Item Name="Cmd_Read.vi" Type="VI" URL="../vi/Cmd_Read.vi"/>
 		<Item Name="Data_Check.vi" Type="VI" URL="../vi/Data_Check.vi"/>
+		<Item Name="Data_Connect.vi" Type="VI" URL="../vi/Data_Connect.vi"/>
 		<Item Name="Data_Send.vi" Type="VI" URL="../vi/Data_Send.vi"/>
+		<Item Name="FIFO_ReadBlock.vi" Type="VI" URL="../vi/FIFO_ReadBlock.vi"/>
 		<Item Name="Handle_Cmd.vi" Type="VI" URL="../vi/Handle_Cmd.vi"/>
 		<Item Name="Init_Comm.vi" Type="VI" URL="../vi/Init_Comm.vi"/>
 		<Item Name="Init_FPGA.vi" Type="VI" URL="../vi/Init_FPGA.vi"/>
@@ -1868,6 +1892,7 @@ AddOutputFilter chunkFilter
 		<Item Name="RT_Cmd.ctl" Type="VI" URL="../vi/RT_Cmd.ctl"/>
 		<Item Name="RT_lab7.vi" Type="VI" URL="../vi/RT_lab7.vi"/>
 		<Item Name="RT_lab8.vi" Type="VI" URL="../vi/RT_lab8.vi"/>
+		<Item Name="RT_lab9.vi" Type="VI" URL="../vi/RT_lab9.vi"/>
 		<Item Name="Shutdown.vi" Type="VI" URL="../vi/Shutdown.vi"/>
 		<Item Name="SP.lvlib" Type="Library" URL="../vi/SP.lvlib"/>
 		<Item Name="states.ctl" Type="VI" URL="../vi/states.ctl"/>
